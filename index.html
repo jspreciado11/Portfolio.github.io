@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Porfolio</title>
+        <link rel="icon" href="images/portfolio.png" type="image/x-icon">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="left">
+            <a href="/"> Jones Preciado</a>
+        </div>
+
+        <div class="right">
+            <a href="https://github.com/jspreciado11" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+        
+            <a href="https://www.linkedin.com/in/jones-stewart-preciado-86034629b/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+       
+            <a href="mailto:jspreciado.dev@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-envelope"></i>                
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--Section 1: Hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Jones!</h2>
+                 <div class="typewriter">
+                  <div>
+                        <p>
+                         Aspiring Web Developer
+                        </p>
+                  </div>
+                   
+                 </div>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#projects">
+                        <i class="fa-solid fa-clipboard"></i>  
+                        <span>Projects</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/headshot.webp" alt="Wala picture">
+                <!--Picture nako... hayts! wala koy formal -->
+            </div>
+        </section>
+
+        <!--Section 2: Skills-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">Equipped with basic skills for web development</div>
+        
+            <div class="cells">
+                <div class="cell">
+                    <div class="skill-card">
+                        <div class="front">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="back">
+                            <span> Beginner</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cell">
+                    <div class="skill-card">
+                        <div class="front">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="back">
+                            <span>Beginner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="skill-card">
+                        <div class="front">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="back">
+                            <span>intermediate</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="cell">
+                    <div class="skill-card">
+                        <div class="front">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="back">
+                            <span>Beginner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--Section 3: Projects-->
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+
+            <div class="group">
+                <div class="project-details">
+                    <img src="images/projectLogo.webp" alt="project">
+                    <p>LumoTech</p>
+                    <p>An IoT-Based Monitoring System for Microalgae Cultivation with Mobile App Integration</p>
+                    
+                </div>
+                
+
+            <div class="text">Recently completed a capstone project: LUMOTECH: An IoT-Based Monitoring System for Microalgae Cultivation with Mobile App Integration, where I calibrated IoT devices with C++ and enabled data transfer via WebSockets. 
+                <div class="project-link">
+                    <a href="https://www.facebook.com/ustpcdosite/videos/1564821417747843" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-link"></i>
+                        <span>Link</span>
+                    </a>
+                </div>
+            </div>
+             </div>
+            
+
+        </section>
+
+        <!--Section 4: Contact-->
+        <section id="contact" class="contact-section">
+        <h2>Send me a message!</h2>
+
+        <div class="group">
+            <div class="text">
+                <p>Got a question or proposal, or just want to say hello? Go ahead.</p>            
+            </div>
+
+            <form method="POST" id="form">
+                <input type="hidden" name="access_key" value="049bc793-0a9e-4735-a5bd-23e19032c841"> <!-- Replace with your actual access key -->
+            
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> <!-- Optional, anti-bot feature -->
+            
+                <button type="submit">Send Message</button>
+            
+                <div id="result" class="load"></div>
+            </form>
+               
+        </div>
+    </section>
+    </main>
+    <script src="script.js"> </script>
+    </script>
+</body>
+</html>
